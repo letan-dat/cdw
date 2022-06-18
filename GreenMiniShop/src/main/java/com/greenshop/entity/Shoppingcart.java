@@ -25,7 +25,7 @@ public class Shoppingcart {
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "userId", nullable = false,
             foreignKey = @ForeignKey(name="fk_user_cart"))
-	private User userId;
+	private Users userId;
 	
 	@Column(name = "total_price")
 	private double total_price;
@@ -38,11 +38,11 @@ public class Shoppingcart {
 		this.id = id;
 	}
 
-	public User getUserId() {
+	public Users getUserId() {
 		return userId;
 	}
 
-	public void setUserId(User userId) {
+	public void setUserId(Users userId) {
 		this.userId = userId;
 	}
 

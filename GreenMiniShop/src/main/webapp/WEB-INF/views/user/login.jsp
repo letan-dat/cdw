@@ -16,10 +16,16 @@
 		<div class="login-page">
 			<div class="form">
 				<h2>ĐĂNG NHẬP</h2>
-				<form class="login-form">
-					<input type="text" placeholder="Tên đăng nhập" /> <input
-						type="password" placeholder="Mật khẩu" />
-					<button>login</button>
+				<c:if test="${param.error == 'true'}">
+					<div style="color: red; margin: 10px 0px;">
+						Email hoặc mật khẩu không đúng!!
+					</div>
+				</c:if>
+				<form action="/j_spring_security_check" method="POST"
+					class="login-form">
+					<input type="text" placeholder="Tên đăng nhập" name="email" /> <input
+						type="password" placeholder="Mật khẩu" name="password" /> <input
+						name="submit" type="submit" value="submit" />
 					<p class="message">
 						Bạn chưa có tài khoản?<a href="#"> Tạo tài khoản ngay</a>
 					</p>

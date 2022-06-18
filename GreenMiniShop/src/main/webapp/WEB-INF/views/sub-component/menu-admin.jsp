@@ -5,7 +5,8 @@
   Time: 9:12 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@include file="taglib.jsp"%>
 <div class="side-bar bg-light border-right" id="sidebar-wrapper">
     <div class="sidebar-heading text-center"><b>Mobile Shop</b></div>

@@ -1,1 +1,16 @@
 1655022809575	Delete element
+1655556449974	Delete element
+1655556608587	Delete element
+1655556888991	Rename type 'User'
+1655559641092	Move 'header-admin.jsp' to 'admin'
+1655559790223	Move 'taglib.jsp' to 'admin'
+1655559920104	Move 'taglib.jsp' to 'sub-component'
+1655559921896	Move 'header-admin.jsp' to 'sub-component'
+1655560264988	Move 'header-admin.jsp' to 'admin'
+1655560267931	Move 'taglib.jsp' to 'admin'
+1655560716047	Move 'menu-admin.jsp' to 'admin'
+1655561020619	Move 'top-menu-admin.jsp' to 'admin'
+1655562016713	Move 'top-menu-admin.jsp' to 'sub-component'
+1655562019200	Move 'taglib.jsp' to 'sub-component'
+1655562022386	Move 'menu-admin.jsp' to 'sub-component'
+1655562044797	Move 'header-admin.jsp' to 'sub-component'

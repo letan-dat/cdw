@@ -26,7 +26,7 @@ public class Order {
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "user_id", nullable = false,
             foreignKey = @ForeignKey(name="fk_user_order"))
-	private User user_id;
+	private Users user_id;
 	
 	@Column(name = "ordered_date")
 	private Date ordered_date;
@@ -50,11 +50,11 @@ public class Order {
 		this.id = id;
 	}
 
-	public User getUser_id() {
+	public Users getUser_id() {
 		return user_id;
 	}
 
-	public void setUser_id(User user_id) {
+	public void setUser_id(Users user_id) {
 		this.user_id = user_id;
 	}
 

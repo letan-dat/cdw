@@ -5,21 +5,23 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 <head>
-    <jsp:include page="/sub-component/header-admin.jsp"/>
+    
+    <jsp:directive.include file="header-admin.jsp" />
     <title></title>
 </head>
 
 <body>
 <div class="d-flex" id="wrapper">
 
-    <jsp:include page="/sub-component/menu-admin.jsp"/>
+    <%-- <jsp:include file="/sub-component/menu-admin.jsp"/> --%>
+     <jsp:directive.include file="menu-admin.jsp" />
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
 
-        <jsp:include page="/sub-component/top-menu-admin.jsp"/>
-
+       <%--  <jsp:include file="/sub-component/top-menu-admin.jsp"/> --%>
+<jsp:directive.include file="top-menu-admin.jsp" />
         <div class="container-fluid">
             <div class="mb-5 mt-3 ">
                 <h4 class=" mt-3 mb-3">Bảng tính tổng</h4>

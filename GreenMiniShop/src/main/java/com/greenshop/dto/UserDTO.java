@@ -19,8 +19,6 @@ public class UserDTO {
 	private String email;
 	private String phone;
 	private String address;
-	private String gender;
-	private boolean isEnabled;
 
 	private List<RoleDTO> roleList = new ArrayList<>();
 
@@ -70,22 +68,6 @@ public class UserDTO {
 
 	public void setAddress(String address) {
 		this.address = address;
-	}
-
-	public String getGender() {
-		return gender;
-	}
-
-	public void setGender(String gender) {
-		this.gender = gender;
-	}
-
-	public boolean isEnabled() {
-		return isEnabled;
-	}
-
-	public void setEnabled(boolean isEnabled) {
-		this.isEnabled = isEnabled;
 	}
 
 	public List<RoleDTO> getRoleList() {

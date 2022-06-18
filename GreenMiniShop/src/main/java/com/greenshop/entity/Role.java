@@ -23,10 +23,10 @@ public class Role {
 	private Long id;
 
 	@Column(name = "role_name")
-	private String role_name;
+	private String name;
 	
 	 @ManyToMany(mappedBy = "roleList")
-	    private List<User> userList = new ArrayList<>();
+	    private List<Users> userList = new ArrayList<>();
 	
 	public Long getId() {
 		return id;
@@ -37,11 +37,11 @@ public class Role {
 	}
 
 	public String getRole_name() {
-		return role_name;
+		return name;
 	}
 
-	public void setRole_name(String role_name) {
-		this.role_name = role_name;
+	public void setRole_name(String name) {
+		this.name = name;
 	}
 
 }
