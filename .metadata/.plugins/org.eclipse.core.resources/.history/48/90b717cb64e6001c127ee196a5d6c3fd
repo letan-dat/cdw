@@ -1,0 +1,15 @@
+package com.greenshop.service;
+
+import java.util.List;
+
+import com.greenshop.dto.ImageDTO;
+
+public interface ImageService {
+	List<ImageDTO> findAll();
+	ImageDTO save(ImageDTO imgDTO);
+	ImageDTO edit(ImageDTO imgDTO);
+	void delete(long id);
+	ImageDTO findById(long id);
+	ImageDTO findImg(String imgDTO);
+
+}

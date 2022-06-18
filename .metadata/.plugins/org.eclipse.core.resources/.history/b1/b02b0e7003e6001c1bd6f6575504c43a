@@ -1,0 +1,63 @@
+package com.greenshop.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name = "discount")
+public class Discount {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
+	private long id;
+	
+	@Column(name = "code")
+	@NotNull(message = "Hãy nhập mã giảm giá")
+	private String code;
+
+	@Column(name = "persent")
+	@NotNull(message = "Nhập số liệu muốn giảm cho sản phẩm")
+	private String persent;
+
+	public Discount(long id, @NotNull(message = "Hãy nhập mã giảm giá") String code,
+			@NotNull(message = "Nhập số liệu muốn giảm cho sản phẩm") String persent) {
+		super();
+		this.id = id;
+		this.code = code;
+		this.persent = persent;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
+	}
+
+	public String getPersent() {
+		return persent;
+	}
+
+	public void setPersent(String persent) {
+		this.persent = persent;
+	}
+	
+	
+}

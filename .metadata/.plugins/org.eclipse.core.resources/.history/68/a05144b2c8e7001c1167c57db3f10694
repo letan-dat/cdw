@@ -1,0 +1,20 @@
+package com.greenshop.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name = "order")
+public class Order {
+	@Id
+	private Long id;
+	public  user_id
+	  ordered_date
+	  received_date
+	  status_id
+	 total_price
+}

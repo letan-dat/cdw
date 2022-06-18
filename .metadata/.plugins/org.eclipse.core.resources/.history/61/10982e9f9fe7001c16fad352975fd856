@@ -1,0 +1,9 @@
+package com.greenshop.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.greenshop.entity.Tree;
+
+public interface TreeRepository extends JpaRepository<Tree, Long>{
+
+}

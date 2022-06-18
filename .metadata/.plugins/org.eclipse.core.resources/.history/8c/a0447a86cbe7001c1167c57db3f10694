@@ -1,0 +1,51 @@
+package com.greenshop.dto;
+
+public class OrderItem {
+	private Long id;
+	private TreeDTO tree_id;
+	private Order order_id;
+	private int quantity;
+	private double total_price_item;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public TreeDTO getTree_id() {
+		return tree_id;
+	}
+
+	public void setTree_id(Tree tree_id) {
+		this.tree_id = tree_id;
+	}
+
+	public Order getOrder_id() {
+		return order_id;
+	}
+
+	public void setOrder_id(Order order_id) {
+		this.order_id = order_id;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+	public double getTotal_price_item() {
+		return total_price_item;
+	}
+
+	public void setTotal_price_item(double total_price_item) {
+		this.total_price_item = tree_id.getPrice()*quantity;
+	}
+	
+	
+}

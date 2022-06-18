@@ -1,0 +1,13 @@
+package com.greenshop.dto;
+
+import com.greenshop.entity.Category;
+
+public class TreeDTO {
+	private Long id;
+	private String name;
+	private double price;
+	private String description;
+	private int quantity;
+	private Category category_id;
+
+}

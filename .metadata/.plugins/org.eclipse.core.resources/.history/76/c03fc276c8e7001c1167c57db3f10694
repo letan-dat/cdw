@@ -1,0 +1,6 @@
+package com.greenshop.entity;
+
+public class Role {
+
+	role_name
+}

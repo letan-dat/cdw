@@ -1,0 +1,45 @@
+package com.greenshop.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.ForeignKey;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name = "tree")
+public class Tree {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
+	private Long id;
+	
+	@Column(name = "name")
+	private String name;
+	
+	@Column(name = "price")
+	private double price;
+	
+	@Column(name = "description")
+	private String description;
+	
+	@Column(name = "quantity")
+	private int quantity;
+	
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "category_id", nullable = false,
+            foreignKey = @ForeignKey(name="fk_category"))
+	private Category category_id;
+	
+	
+	
+
+}

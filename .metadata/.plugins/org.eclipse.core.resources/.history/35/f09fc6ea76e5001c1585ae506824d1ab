@@ -1,0 +1,36 @@
+package com.demo.DemoProject.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.demo.DemoProject.entity.Category;
+import com.demo.DemoProject.repository.CategoryRepository;
+
+@Service
+public class CategoryService {
+
+	@Autowired
+	private CategoryRepository categoryRep;
+
+	public List<Category> findAll() {
+		return categoryRep.findAll();
+	}
+
+	public void delete(Long id) {
+		categoryRep.deleteById(id);
+	}
+	
+	public void create(Category category) {
+		categoryRep.saveAndFlush(category);
+	}
+	
+//	public Optional<Category> findById(Long id) {
+//		return categoryRep.findById(id);
+//	}
+//	public void update(Category category) {
+//		Optional<Category> cate = categoryRep.findById(category.getId());
+//		
+//	}
+}

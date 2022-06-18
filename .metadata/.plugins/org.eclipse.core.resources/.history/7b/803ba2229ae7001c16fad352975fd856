@@ -1,0 +1,6 @@
+package com.greenshop.repository;
+
+public interface
+TreeRepository {
+
+}

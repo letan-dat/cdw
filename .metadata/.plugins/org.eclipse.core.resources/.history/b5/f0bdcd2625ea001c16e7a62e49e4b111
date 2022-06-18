@@ -1,0 +1,60 @@
+package com.greenshop.service.imp;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+import com.greenshop.dto.UserDTO;
+import com.greenshop.service.UserService;
+
+public class UserServiceImp implements UserService{
+
+	@Override
+	public List<UserDTO> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserDTO save(UserDTO user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(String email) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public UserDTO findEmail(String email) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserDTO findByEmail(String userName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserDTO sendMail(UserDTO user, HttpServletRequest request) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserDTO confirmEmail(String confirmationToken) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean checkPass(String password, String email) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

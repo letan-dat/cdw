@@ -1,0 +1,25 @@
+package com.greenshop.service.imp;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.greenshop.dto.TreeDTO;
+import com.greenshop.service.TreeService;
+
+@Service
+public class TreeServiceIpm implements TreeService{
+
+	@Override
+	public List<TreeDTO> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<TreeDTO> findIndex() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,51 @@
+//package com.greenshop.entity;
+//
+//import javax.persistence.Column;
+//import javax.persistence.Entity;
+//import javax.persistence.GeneratedValue;
+//import javax.persistence.GenerationType;
+//import javax.persistence.Id;
+//import javax.persistence.Table;
+//import javax.validation.constraints.NotNull;
+//
+//import lombok.Data;
+//
+//@Data
+//@Entity
+//@Table(name = "tree")
+//public class Tree {
+//	@Id
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@Column(name = "id")
+//	private long id;
+//	
+//	@Column(name = "name")
+//	@NotNull(message = "Nhập tên cây muốn thêm!")
+//	private String name;
+//	
+//	@Id
+//	@Column(name = "price")
+//	private float price;
+//	
+//	@Column(name = "description")
+//	private String description;
+//
+//	@Id
+//	@NotNull(message = "hãy nhập số lượng cây cần thêm vào")
+//	@Column(name = "quantity")
+//	private int quantity;
+//	
+//	@Column(name = "imageId")
+//	@NotNull(message = "Thêm ảnh vào đây!")
+//	private int imageId;
+//	
+//	@Id
+//	@NotNull(message = "Hãy chọn phân loại của cây!")
+//	@Column(name = "categoryId")
+//	private int categoryId;
+//	
+//	@Column(name = "discountId")
+//	private int discountId;
+//
+//
+//}

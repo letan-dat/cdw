@@ -1,0 +1,24 @@
+1654561326187	Rename package 'com.greenshop.dao'
+1654561458051	Rename type 'CategoryDAO'
+1654561705148	Move compilation unit
+1654562181279	Rename type 'ICategory'
+1654568668144	Rename type 'ICategoryService'
+1654584877488	Delete element
+1654584880090	Delete element
+1654660267277	Delete element
+1654660275084	Delete element
+1654660279357	Delete element
+1654660322861	Delete element
+1654660326817	Delete element
+1654660331846	Delete element
+1654672715710	Delete element
+1654762079380	Copy compilation unit
+1654762130015	Copy compilation unit
+1654762196791	Copy compilation unit
+1654762217664	Copy compilation unit
+1654762272129	Copy compilation unit
+1654762289217	Rename type 'User'
+1654762325285	Rename type 'Shoppingcart'
+1654762336479	Rename type 'Role'
+1654762343238	Rename type 'OrderItem'
+1654762353551	Rename type 'Order'

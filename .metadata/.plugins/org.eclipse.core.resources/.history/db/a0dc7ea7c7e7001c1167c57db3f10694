@@ -1,0 +1,6 @@
+package com.greenshop.dto;
+
+public class StatusDTO {
+	private Long id;
+	private String status;
+}

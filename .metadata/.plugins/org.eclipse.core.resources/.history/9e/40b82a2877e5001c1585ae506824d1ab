@@ -1,0 +1,24 @@
+package com.demo.DemoProject.dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
+
+import org.springframework.stereotype.Repository;
+
+import com.demo.DemoProject.entity.Category;
+
+@Repository(value = "CategoryDAO")
+@Transactional
+public class CategoryDAO {
+
+	@PersistenceContext
+	private EntityManager manager;
+	
+	public List<Category> listAll(){
+		List <Category> cate = manager.createQuery("select * from category", Category.class).getResultList();
+		return cate;
+	}
+}

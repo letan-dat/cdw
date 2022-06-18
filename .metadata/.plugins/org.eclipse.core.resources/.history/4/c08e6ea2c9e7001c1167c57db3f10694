@@ -1,0 +1,36 @@
+package com.greenshop.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name = "order")
+public class Order {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
+	private Long id;
+	
+	@Column(name = "user_id")
+	public User user_id;
+	
+	@Column(name = "ordered_date")
+	public Data ordered_date;
+	
+	@Column(name = "received_date")
+	public Data received_date;
+	
+	@Column(name = "istatus_id")
+	public Status status_id;
+	
+	@Column(name = "total_price")
+	public double total_price;
+	
+}

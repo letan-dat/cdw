@@ -1,0 +1,14 @@
+package com.greenshop.service;
+
+import java.util.List;
+
+import com.greenshop.dto.CategoryDTO;
+
+public interface ICategory {
+	List<CategoryDTO> findAll();
+	CategoryDTO findCategory(String categoryDTO);
+	CategoryDTO findById(long id);
+	CategoryDTO save(CategoryDTO categoryDTO);
+	CategoryDTO edit(CategoryDTO categoryDTO);
+	void delete(long id);
+}

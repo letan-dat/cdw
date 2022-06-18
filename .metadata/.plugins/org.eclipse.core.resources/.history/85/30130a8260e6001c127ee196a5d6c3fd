@@ -1,0 +1,12 @@
+package com.greenshop;
+
+import org.springframework.boot.SpringApplication;
+
+@SpringBootApplication
+public class GreenMiniShopApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(GreenMiniShopApplication.class, args);
+	}
+
+}

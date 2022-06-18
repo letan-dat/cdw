@@ -1,0 +1,8 @@
+package com.greenshop.service;
+
+import com.greenshop.dto.ImageDTO;
+
+public interface ImageService {
+	public ImageDTO findById(long id);
+
+}

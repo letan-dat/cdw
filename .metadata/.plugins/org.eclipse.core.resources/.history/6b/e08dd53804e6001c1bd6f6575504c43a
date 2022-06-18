@@ -1,0 +1,5 @@
+package com.greenshop.config;
+
+public class ModelMapperConfig {
+
+}

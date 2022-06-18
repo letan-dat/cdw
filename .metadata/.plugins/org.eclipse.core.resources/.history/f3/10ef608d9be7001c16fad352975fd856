@@ -1,0 +1,10 @@
+package com.greenshop.service;
+
+import java.util.List;
+
+import com.greenshop.entity.Tree;
+
+public interface TreeService {
+	public List<Tree> findAll();
+	public List<Tree> findIndex();
+}

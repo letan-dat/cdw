@@ -1,0 +1,31 @@
+package com.greenshop.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name = "user")
+public class User {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
+	private Long id;
+
+	@Column(name = "pasword")
+	private String password;
+
+	`name`
+
+	VARCHAR(255) NOT NULL,
+	  `email` VARCHAR(255) NOT NULL,
+	  `phone` VARCHAR(10) NOT NULL,
+	  `address` TEXT NOT NULL,
+	  `gender` VARCHAR(3)
+}

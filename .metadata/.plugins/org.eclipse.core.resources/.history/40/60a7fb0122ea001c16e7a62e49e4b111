@@ -1,0 +1,5 @@
+package com.greenshop.service.imp;
+
+public class UserServiceImp {
+
+}

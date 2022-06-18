@@ -1,0 +1,45 @@
+package com.greenshop.dto;
+
+
+public class CategoryDTO {
+	private long id;
+	private String name;
+	private ImageDTO image_id;
+	
+	public CategoryDTO() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public CategoryDTO(long id, String name, ImageDTO image_id) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.image_id = image_id;
+	}
+
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public ImageDTO getImage() {
+		return image_id;
+	}
+
+	public void setImage(ImageDTO image) {
+		this.image_id = image;
+	}
+	
+}

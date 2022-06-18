@@ -1,0 +1,5 @@
+package com.greenshop.entity;
+
+public class Order {
+
+}

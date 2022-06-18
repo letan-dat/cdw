@@ -1,0 +1,5 @@
+package com.greenshop.service;
+
+public class ICategory {
+
+}

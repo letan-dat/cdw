@@ -1,0 +1,12 @@
+package com.greenshop.dto;
+
+public class ImageDTO {
+	private Long id;
+	private String image;
+	
+	public ImageDTO() {
+		// TODO Auto-generated constructor stub
+	}
+	
+
+}

@@ -1,0 +1,27 @@
+package com.greenshop.service.imp;
+
+public class CategoryServiceImp {
+
+//	@Autowired
+//	private CategoryRepository categoryRep;
+//
+//	public List<Category> findAll() {
+//		return categoryRep.findAll();
+//	}
+//
+//	public void delete(Long id) {
+//		categoryRep.deleteById(id);
+//	}
+//	
+//	public void create(Category category) {
+//		categoryRep.saveAndFlush(category);
+//	}
+//	
+//	public Optional<Category> findById(Long id) {
+//		return categoryRep.findById(id);
+//	}
+//	public void update(Category category) {
+//		Optional<Category> cate = categoryRep.findById(category.getId());
+//		
+//	}
+}
