@@ -89,5 +89,28 @@
 	<!------footer------>
 	<jsp:directive.include file="footer.jsp" />
 	<!-----/footer------>
+
+	---------addCart----------
+	<script>
+		const btn = document.querySelectorAll("button")
+		btn.forEach(function (button, index) {
+			button.addEventListener("click", function (event){
+				var btnItem = event.target
+				var product = btnItem.parentElement
+				var img = product.querySelector("img").src
+				var name = product.querySelector("h1").innerText
+				var price = product.querySelector("span").innerText
+				addCart(img, name, price)
+			})
+		})
+		function addCart (img, name, price) {
+			var addtr = document.createElement("tr")
+			var trcontent = ''
+			addtr.innerHTML = trcontent
+			var cartTable = document.querySelector("tbody")
+			cartTable.append(addtr)
+		}
+	</script>
+
 </body>
 </html>

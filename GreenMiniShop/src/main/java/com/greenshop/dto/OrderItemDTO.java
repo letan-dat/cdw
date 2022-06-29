@@ -46,6 +46,4 @@ public class OrderItemDTO {
 	public void setTotal_price_item(double total_price_item) {
 		this.total_price_item = tree_id.getPrice()*quantity;
 	}
-	
-	
 }

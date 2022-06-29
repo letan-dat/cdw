@@ -171,8 +171,6 @@
 
 	</div>
 	<!-- End Products  -->
-
-
 	<!---------- footer------>
 	<jsp:directive.include file="footer.jsp" />
 </body>

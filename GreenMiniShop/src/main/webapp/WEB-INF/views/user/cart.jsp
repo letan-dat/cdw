@@ -125,10 +125,34 @@
 			</div>
 		</div>
 	</div>
-	
+
 
 <!------footer------>
 	<jsp:directive.include file="footer.jsp" />
-<!-----/footer------>	
+<!-----/footer------>
+
+	-----------ramoveCart and total-------------
+	<script>
+		function removeItem(){
+			let removeItem = document.getElementsByClassName('btn-remove');
+			for (let i = 0; i < removeItem.length; i++){
+				let button = removeItem[i]
+				button.addEventListener('click',function(event){
+					let removeItem = event.target
+					removeItem.parentElement.remove();
+				});
+			}}
+
+		function updateTotalMoney(arr) {
+			let totalMoney = 0;
+			let discountMoney = 0;
+
+			for (let i = 0; i < arr.length; i++) {
+				const p = arr[i];
+				totalMoney += p.count * p.price;
+			}
+		}
+
+	</script>
 </body>
 </html>

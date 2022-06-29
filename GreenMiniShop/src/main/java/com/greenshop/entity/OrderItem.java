@@ -36,7 +36,7 @@ public class OrderItem {
 	private int quantity;
 	
 	@Column(name = "total_price_item")
-	private double total_price_item;
+	private static double total_price_item;
 
 	public Long getId() {
 		return id;
@@ -70,13 +70,11 @@ public class OrderItem {
 		this.quantity = quantity;
 	}
 
-	public double getTotal_price_item() {
+	public static double getTotal_price_item() {
 		return total_price_item;
 	}
 
 	public void setTotal_price_item(double total_price_item) {
 		this.total_price_item = tree_id.getPrice()*quantity;
 	}
-	
-	
 }

@@ -40,7 +40,7 @@ public class Order {
 	private Status status_id;
 	
 	@Column(name = "total_price")
-	private double total_price;
+	private static double total_price;
 
 	public Long getId() {
 		return id;
@@ -82,7 +82,7 @@ public class Order {
 		this.status_id = status_id;
 	}
 
-	public double getTotal_price() {
+	public static double getTotal_price() {
 		return total_price;
 	}
 
